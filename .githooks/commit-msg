@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+message=$(cat "$1")
+if [ "${#message}" -lt 10 ] || ! [[ "$message" =~ ^(feat|fix|docs|refactor|chore): ]]; then
+  echo "Commit blocked: use a 10+ character message starting with feat:, fix:, docs:, refactor:, or chore:"
+  exit 1
+fi

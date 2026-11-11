@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+pattern="TO""DO|FIX""ME"
+while IFS= read -r -d "" file; do
+  if git show ":$file" | grep -nE "$pattern"; then
+    echo "Commit blocked: remove the marker from $file"
+    exit 1
+  fi
+done < <(git diff --cached --name-only --diff-filter=ACMR -z)
