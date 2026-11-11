@@ -2,7 +2,7 @@
 
 - Course:
 - Topic:
-- Date:
+- Date (YYYY-MM-DD):
 
 ## Key Concepts
 
