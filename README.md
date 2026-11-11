@@ -11,6 +11,7 @@ CampusNotes is a student project for organizing lecture notes by course and topi
 ## Planned structure
 
 Course notes will be stored as Markdown files inside the `notes/` folder.
+Notes are organized by course, with one Markdown file for each lecture.
 
 ## Project status
 
