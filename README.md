@@ -17,3 +17,5 @@ Course notes will be stored as Markdown files inside the `notes/` folder.
 Initial project setup.
 
 Contribution by Harsh Singhal (URN: 2581173) – Added contributor information.
+## Clone verification
+This second working copy is used to verify the Git push and pull workflow.
